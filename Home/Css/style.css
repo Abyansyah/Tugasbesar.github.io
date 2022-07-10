@@ -5,13 +5,14 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
 }
-
 /* Navbar styling */
 .navbar {
   position: fixed;
@@ -21,19 +22,16 @@
   font-family: 'Open Sans', sans-serif;
   transition: all 0.3s ease;
 }
-
 .navbar.sticky {
   padding: 15px 0;
   background: #fff;
   box-shadow: 0px 0 18px rgba(55, 66, 59, 0.08);
 }
-
 .navbar .max-width {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .navbar .logo a {
   margin: 0;
   padding: 0;
@@ -56,36 +54,11 @@
 }
 
 /* Menu btn styling */
-
 .menu-btn {
   color: #1b1b1b;
   font-size: 23px;
   cursor: pointer;
   display: none;
-}
-
-.scroll-up-btn {
-  position: fixed;
-  height: 45px;
-  width: 42px;
-  background: #3ab0ff;
-  right: 30px;
-  bottom: 10px;
-  text-align: center;
-  line-height: 45px;
-  color: #fff;
-  z-index: 999;
-  font-size: 30px;
-  border-radius: 6px;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-.scroll-up-btn.show {
-  bottom: 30px;
-  opacity: 1;
-  pointer-events: auto;
 }
 
 /* home section styling */
@@ -299,12 +272,10 @@ section .title {
 .teams .carousel .card:hover .box {
   transform: scale(1.05);
 }
-
 .owl-dots {
   text-align: center;
   margin-top: 20px;
 }
-
 .owl-dot {
   height: 13px;
   width: 13px;

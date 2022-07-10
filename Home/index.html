@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Animasi CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- External CSS -->
     <link rel="stylesheet" href="Css/style.css" />
 
@@ -32,9 +35,6 @@
   </head>
   <body>
     <!-- Navbar  start -->
-    <div class="scroll-up-btn">
-      <i class="fas fa-angl-up"></i>
-    </div>
     <nav class="navbar">
       <div class="max-width">
         <div class="logo">
@@ -55,7 +55,7 @@
     <!-- Home section start -->
     <section class="home" id="home">
       <div class="max-width">
-        <div class="home-content">
+        <div class="home-content" data-aos="fade-up" data-aos-duration="1200">
           <div class="judul-1">Branding dan Digital Marketing</div>
           <div class="judul-2">Agency yang <span>Mengerti Anda</span></div>
           <div class="isi">
@@ -73,20 +73,20 @@
     <!-- Card section start -->
     <section class="services" id="card">
       <div class="max-width">
-        <div class="serv-content">
-          <div class="card">
-            <div class="box">
+        <div class="serv-content" >
+          <div class="card" data-aos="fade-up" data-aos-duration="4000" data-aos-delay="100"  >
+            <div class="box" >
               <iframe src="https://giphy.com/embed/IGAg039nGNrdcNTBkg" width="80px" frameborder="0"></iframe>
               <div class="text">Bekerja sama dengan lebih dari 50 perusahaan terbesar di Dunia.</div>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-duration="4000" data-aos-delay="300"> 
             <div class="box">
               <iframe src="https://giphy.com/embed/Bos047teBkt4a8Rdxt" width="80px" frameborder="0"></iframe>
               <div class="text">Memiliki 8.500 orang karyawan yang berpengalaman</div>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-duration="4000" data-aos-delay="400">
             <div class="box">
               <iframe src="https://giphy.com/embed/5BBi2kyvGgjE6iVBAi" width="80px" frameborder="0"></iframe>
               <div class="text">100.000+ project terselesaikan.</div>
@@ -100,11 +100,10 @@
     <section class="about" id="about">
       <div class="max-width">
         <div class="about-content">
-          <div class="column left">
+          <div class="column left" data-aos="fade-right" data-aos-duration="4000">
             <img src="Asset/img/branding.jpg" alt="" />
           </div>
-          <div class="column right">
-
+          <div class="column right" data-aos="fade-left" data-aos-duration="4000" data>
             <div class="text">Mau mengembangkan usaha? </span></div>
             <p>
               Kami bantu usaha anda menjadi lebih berkarakter,
@@ -120,7 +119,7 @@ Digital Consultan dan IT Infrastruktur.
     <!-- About section end -->
 
     <!-- Our clients -->
-    <section class="teams" id="teams">
+    <section class="teams">
       <div class="max-width">
         <h2 class="title">
           Our Clients
@@ -208,6 +207,11 @@ Digital Consultan dan IT Infrastruktur.
       </div>
    </footer>
 <!-- Footer section end -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
     <script src="Js/script.js"></script>
   </body>
 </html>

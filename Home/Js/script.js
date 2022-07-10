@@ -6,17 +6,11 @@ $(document).ready(function () {
     } else {
       $('.navbar').removeClass('sticky');
     }
-    if (this.scroll > 40) {
-      $('.scroll-up-btn').addClass('show');
-    } else {
-      $('.scroll-up-btn').removeClass('show');
-    }
   });
   // slide-up script
   $('scroll-up-btn').click(function () {
     $('html').animate({ scrollTop: 0 });
   });
-
   // menu navbar script
   $('.menu-btn').click(function () {
     $('.navbar .menu').toggleClass('active');
